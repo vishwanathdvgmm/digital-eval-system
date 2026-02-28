@@ -12,7 +12,7 @@ from google import genai
 from google.genai import types
 
 # environment-driven configuration
-API_KEY = "AIzaSyBf0M5v6eLmQfGZHyyOvCfng0h0WahYLtg"
+API_KEY = "Your API Key."
 MODEL = "gemini-2.5-flash"
 RETRIES = 2
 BACKOFF_BASE = 1.0
