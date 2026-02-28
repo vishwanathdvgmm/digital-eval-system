@@ -142,6 +142,8 @@
 │           ├── 📄 V005__evaluations_table.sql
 │           ├── 📄 V006__results_release.sql
 │           └── 📄 run_all.sql
+├── 📁 scripts
+│   ├── 📄 bash.sh
 ├── 📁 services
 │   ├── 📁 go-node
 │   │   ├── 📁 cmd
@@ -158,6 +160,7 @@
 │   │   │   │   ├── 🐹 handlers_validation.go
 │   │   │   │   ├── 🐹 register_admin_routes.go
 │   │   │   │   ├── 🐹 register_auth_routes.go
+│   │   │   │   ├── 🐹 spa.go
 │   │   │   │   ├── 🐹 register_authority_routes.go
 │   │   │   │   ├── 🐹 register_evaluator_routes.go
 │   │   │   │   ├── 🐹 register_examiner_routes.go
@@ -218,6 +221,8 @@
 │   │   │   │   ├── 🐹 storage_temp.go
 │   │   │   │   ├── 🐹 upload_handler.go
 │   │   │   │   └── 🐹 upload_service.go
+│   │   │   ├── 📁 logger
+│   │   │   │   ├── 🐹 formatter.go
 │   │   │   ├── 📁 pybridge
 │   │   │   │   ├── 🐹 client.go
 │   │   │   │   └── 🐹 types.go
@@ -235,6 +240,8 @@
 │   │   │       ├── 🐹 handlers.go
 │   │   │       ├── 🐹 pdf_generator.go
 │   │   │       └── 🐹 service.go
+│   │   ├── 📁 ui
+│   │   │   └── 🐹 embed.go
 │   │   ├── 📄 go.mod
 │   │   └── 📄 go.sum
 │   └── 📁 python-validator
