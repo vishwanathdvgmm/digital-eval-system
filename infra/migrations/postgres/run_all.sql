@@ -1,0 +1,6 @@
+\i 'infra/migrations/postgres/V001__create_users.sql'
+\i 'infra/migrations/postgres/V002__create_results.sql'
+\i 'infra/migrations/postgres/V003__audit_logs.sql'
+\i 'infra/migrations/postgres/V004__authority_evaluator.sql'
+\i 'infra/migrations/postgres/V005__evaluations_table.sql'
+\i 'infra/migrations/postgres/V006__results_release.sql'
