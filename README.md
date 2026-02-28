@@ -240,3 +240,12 @@ _Note: The project uses a Makefile for convenience._
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### CONTRIBUTIONS BY:
+
+[VISHWANATH M M](https://github.com/vishwanathdvgmm)<br>
+[SWAYAM R VERNEKAR](https://github.com/ver1619)<br>
+[SAMPATKUMAR H ANGADI](https://github.com/Raone2005)<br>
+[PRAJWAL M](https://github.com/Prajwalpraju17)<br>
