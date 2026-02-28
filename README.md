@@ -235,9 +235,11 @@ _Note: The project uses a Makefile for convenience._
     - Then logout.
     - Now follow the below tutorial video.
 
-## Tutorial Video
+## 🎥 Tutorial Video
 
-## [![Watch the tutorial](assets/thumbnail.png)](assets/tutorial.mp4)
+## 🎥 Tutorial Video
+
+[![Watch the tutorial](assets/thumbnail.png)](https://private-user-images.githubusercontent.com/133391353/556414211-bc0584d2-37d1-45f9-96a2-9e4a1782103c.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIyOTU3NTIsIm5iZiI6MTc3MjI5NTQ1MiwicGF0aCI6Ii8xMzMzOTEzNTMvNTU2NDE0MjExLWJjMDU4NGQyLTM3ZDEtNDVmOS05NmEyLTllNGExNzgyMTAzYy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyOFQxNjE3MzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YzQ2OGUwNDFiNDI3ZjlmMGJlOTUxOTBiM2M3ZDI4NDM4NzZiNTRlOTVmMjRiOTc3MWM3NDAwMWU4NjRkZTBmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eDMeYkvoJk2nq7uyiFD1w1EK5V9jpXY7k3GsULymlHU)
 
 ## 📄 License
 
