@@ -3,6 +3,7 @@ infra/certs/
 services/python-validator/tests/
 services/python-validator/.venv/
 services/go-node/node.exe
+services/go-node/ui/dist/
 docs/
 documents/
 .env
