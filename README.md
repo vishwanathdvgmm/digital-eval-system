@@ -235,7 +235,9 @@ _Note: The project uses a Makefile for convenience._
     - Then logout.
     - Now follow the below tutorial video.
 
----
+## Tutorial Video
+
+## [![Watch the tutorial](assets/thumbnail.png)](assets/tutorial.mp4)
 
 ## 📄 License
 
