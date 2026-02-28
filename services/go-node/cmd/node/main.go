@@ -28,6 +28,7 @@ import (
 	"digital-eval-system/services/go-node/internal/rootdir"
 	"digital-eval-system/services/go-node/internal/storage"
 	"digital-eval-system/services/go-node/internal/student"
+	"digital-eval-system/services/go-node/ui"
 )
 
 type Config struct {
@@ -245,8 +246,8 @@ func main() {
 	registry.Register("admin_service", adminSvc)
 	logrus.Info("admin service registered")
 
-	// API handler with registry injected
-	handler := api.NewHandlerWithRegistry(store, cfg.Block.SignerID, registry)
+	// API handler with registry injected + embedded UI
+	handler := api.NewHandlerWithRegistry(store, cfg.Block.SignerID, registry, ui.StaticFiles)
 	router := handler.WithRouter()
 
 	srv := &http.Server{

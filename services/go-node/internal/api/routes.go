@@ -107,6 +107,12 @@ func NewRouter(h *Handler) http.Handler {
 		w.Write([]byte("ok"))
 	})
 
+	// Serve embedded frontend UI for all non-API routes (SPA catch-all).
+	// This must be the LAST route registered.
+	if h.embeddedUI != nil {
+		r.PathPrefix("/").Handler(spaHandler(h.embeddedUI))
+	}
+
 	return CORSMiddleware(r)
 }
 
