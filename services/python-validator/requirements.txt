@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+google-genai
+opencv-python
+Pillow
+reportlab
+requests
+python-multipart
+pytest
+pytest-asyncio
+PyMuPDF
+rich
