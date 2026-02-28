@@ -49,7 +49,7 @@ By leveraging **Go** for high-performance orchestration, **Python (FastAPI + Gen
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture and Structure
 
 The system follows a microservices-inspired architecture:
 
@@ -70,6 +70,8 @@ The system follows a microservices-inspired architecture:
 4.  **Infrastructure (`infra`)**:
     - **PostgreSQL** for relational data (Users, Results, Audit Logs).
     - **IPFS** (InterPlanetary File System) integration for decentralized storage of artifacts (optional/planned).
+
+You can view the structure of the project here [STRUCTURE](STRUCTURE.md).
 
 ---
 
@@ -142,18 +144,8 @@ Ensure you have the following installed:
         - For postgresql create a database and put it in this field `dsn` with the password and user name same.
         - You should create a new user and password for that user.
         - Open .env and make necessary chnages.
-    - **Applying migrations for postgresql:**
+    - **Creating and applying migrations for postgresql:**
         - Open terminal and run this:
-
-        ```bash
-        cd infra/migrations/postgresql
-        psql -U admin -d digital_eval -f run_all.sql
-        ```
-
-        - Enter the password when prompted.
-        - Now the migrations are applied.
-
-        Run this command in the bash:
 
         ```bash
         psql -U admin -d digital_eval
@@ -163,9 +155,26 @@ Ensure you have the following installed:
 
         ```sql
         CREATE EXTENSION IF NOT EXISTS pgcrypto;
+        \q
         ```
 
+        - In the terminal run this.
+
+        ```bash
+        cd infra/migrations/postgres/
+        psql -U admin -d digital_eval -f run_all.sql
+        ```
+
+        - Enter the password when prompted.
+        - Now the migrations are applied.
+
         - Now insert the users:
+
+        ```bash
+        psql -U admin -d digital_eval
+        ```
+
+        - Enter the password and run this.
 
         ```sql
         INSERT INTO users(user_id, email, role, password_hash)
@@ -175,6 +184,7 @@ Ensure you have the following installed:
         ('examiner_1', 'examiner@example.com', 'examiner', crypt('exam123', gen_salt('bf'))),
         ('evaluator_1', 'evaluator@example.com', 'evaluator', crypt('eval123', gen_salt('bf'))),
         ('student_1', 'student@example.com', 'student', crypt('stud123', gen_salt('bf')));
+        \q
         ```
 
     - **Go Node:**
@@ -192,12 +202,6 @@ Ensure you have the following installed:
         ```bash
         pip install -r requirements.txt
         ```
-
-5.  **Frontend Setup**
-    ```bash
-    cd digital-eval-ui
-    npm install
-    ```
 
 ### ▶️ Running the Application
 
@@ -217,15 +221,10 @@ _Note: The project uses a Makefile for convenience._
     ```bash
     cd services/go-node
     go clean -cache # if needed (optional)
-    go build ./cmd/node
-    ./node -config configs/config.yaml
-    ```
-
-    **Start Frontend: (Terminal 2)**
-
-    ```bash
-    cd digital-eval-ui
-    npm run dev
+    cd ../..
+    bash scripts/build.sh
+    cd services/go-node
+    ./node.exe -config configs/config.yaml # This runs both forntend and backend.
     ```
 
 2.  In GUI login with the admin credentials:
