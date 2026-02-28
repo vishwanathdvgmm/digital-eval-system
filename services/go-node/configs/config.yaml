@@ -1,0 +1,38 @@
+# Node configuration (development). Copy path to env via NODE_CONFIG_PATH or use default.
+server:
+    host: "127.0.0.1"
+    port: 8443
+    tls:
+        enabled: false
+        cert_path: "infra/certs/server.crt"
+        key_path: "infra/certs/server.key"
+
+storage:
+    boltdb_path: "data/boltdb/blocks.db"
+    boltdb_timeout_seconds: 5
+
+block:
+    signer_id: "node-local-1"
+    signature_algo: "RSA" # RSA or ED25519 (RSA implemented in Phase1)
+
+python_extractor:
+    url: "http://127.0.0.1:8081" # Python extractor service URL (default local)
+
+python_validator:
+    url: "http://127.0.0.1:8082" # Python validator service URL (default local)
+
+logging:
+    level: "info"
+
+postgres:
+    dsn: "postgres://admin:admin1234@localhost:5432/digital_eval?sslmode=disable"
+    max_open_conns: 10
+    max_idle_conns: 5
+    conn_max_lifetime_seconds: 300
+
+auth:
+    priv_key_path: "infra/certs/jwt_private.pem"
+    pub_key_path: "infra/certs/jwt_public.pem"
+    issuer: "digital-eval-system"
+    access_ttl_seconds: 900
+    refresh_ttl_seconds: 2592000
