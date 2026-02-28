@@ -1,0 +1,11 @@
+digital-eval-ui/node_modules/
+infra/certs/
+services/python-validator/tests/
+services/python-validator/.venv/
+services/go-node/node.exe
+docs/
+documents/
+.env
+services/go-node/internal/student/assets/biet_logo.jpg
+assets/Screen_Recording_2026-02-28_152333.mp4
+__pycache__
